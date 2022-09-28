@@ -1,0 +1,405 @@
+alex (3.2.5-2) unstable; urgency=medium
+
+  * Patch debian/get_version.hs for newer Cabal.
+
+ -- Clint Adams <clint@debian.org>  Thu, 04 Jun 2020 08:13:41 -0400
+
+alex (3.2.5-1) unstable; urgency=medium
+
+  [ Ilias Tsitsimpis ]
+  * Remove Dmitry Bogatov from Uploaders per his request. Thank you
+    Dmitry for your previous maintainership.
+
+  [ John Paul Adrian Glaubitz ]
+  * Don't copy source code files for stage1 builds (Closes: #906434)
+
+  [ Sean Whitton ]
+  * New upstream release
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Tue, 26 May 2020 09:21:40 -0700
+
+alex (3.2.4-4) unstable; urgency=medium
+
+  [ Clint Adams ]
+  * Set Rules-Requires-Root to no.
+
+  [ Ilias Tsitsimpis ]
+  * Bump debhelper compat level to 10
+  * debian/get_version.hs: Updated for Cabal 2.2
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Wed, 03 Oct 2018 14:48:22 +0300
+
+alex (3.2.4-3) unstable; urgency=medium
+
+  * Use Distribution.Version instead.
+
+ -- Clint Adams <clint@debian.org>  Thu, 12 Apr 2018 14:40:32 -0400
+
+alex (3.2.4-2) unstable; urgency=medium
+
+  * Hide Distribution.Version's showVersion in our get_version util.
+
+ -- Clint Adams <clint@debian.org>  Thu, 12 Apr 2018 10:32:23 -0400
+
+alex (3.2.4-1) unstable; urgency=medium
+
+  [ Ilias Tsitsimpis ]
+  * Change Priority to optional. Since Debian Policy version 4.0.1,
+    priority extra has been deprecated.
+  * Use the HTTPS form of the copyright-format URL
+  * Modify d/watch and Source field in d/copyright to use HTTPS
+  * Declare compliance with Debian policy 4.1.1
+  * Use salsa.debian.org URLs in Vcs-{Browser,Git} fields
+
+  [ Clint Adams ]
+  * Bump to Standards-Version 4.1.4.
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Mon, 09 Apr 2018 15:05:35 -0400
+
+alex (3.2.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Sat, 16 Sep 2017 12:54:02 -0700
+
+alex (3.2.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Sun, 03 Sep 2017 18:51:33 -0700
+
+alex (3.2.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Wed, 05 Jul 2017 21:09:42 -0400
+
+alex (3.1.7-4) unstable; urgency=medium
+
+  * Upload to unstable as part of GHC 8 transition.
+
+ -- Clint Adams <clint@debian.org>  Thu, 27 Oct 2016 18:32:12 -0400
+
+alex (3.1.7-3) experimental; urgency=medium
+
+  * Drop build dependency on jade.  closes: #840587.
+
+ -- Clint Adams <clint@debian.org>  Wed, 19 Oct 2016 13:01:25 -0400
+
+alex (3.1.7-2) experimental; urgency=medium
+
+  * Temporarily build-depend on ghc 8.
+
+ -- Clint Adams <clint@debian.org>  Thu, 13 Oct 2016 14:01:29 -0400
+
+alex (3.1.7-1) unstable; urgency=medium
+
+  [ Dmitry Bogatov ]
+  * Use secure (https) uri in Vcs-Git field in 'debian/control'
+  * Bump standards version to 3.9.8 (no changes needed)
+
+  [ Clint Adams ]
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Tue, 24 May 2016 22:10:48 -0400
+
+alex (3.1.6-2) unstable; urgency=medium
+
+  * Bump standards version to 3.9.8 (no changes needed)
+  * Convert 'debian/copyright' to dep5 format
+
+ -- Dmitry Bogatov <KAction@gnu.org>  Fri, 06 May 2016 18:20:00 +0300
+
+alex (3.1.6-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Mon, 11 Jan 2016 01:22:48 -0500
+
+alex (3.1.5-2) unstable; urgency=medium
+
+  * Implement a stage1 profile build for bootstrapping.
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 22 Dec 2015 02:39:59 +0000
+
+alex (3.1.5-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Thu, 03 Dec 2015 23:39:07 -0500
+
+alex (3.1.4-4) unstable; urgency=medium
+
+  * Switch Vcs-Git/Vcs-Browser headers to new location.
+
+ -- Clint Adams <clint@debian.org>  Thu, 03 Dec 2015 14:54:01 -0500
+
+alex (3.1.4-3) experimental; urgency=medium
+
+  * Add lintian override for spurious rpaths
+
+ -- Joachim Breitner <nomeata@debian.org>  Thu, 20 Aug 2015 15:03:49 +0200
+
+alex (3.1.4-2.1) experimental; urgency=medium
+
+  [ Helmut Grohne ]
+  * Mark alex as Multi-Arch:foreign.
+
+  [ Joachim Breitner ]
+  * Attempt to make debian/get_version.hs work with GHC-7.10
+  * Bump standards-version to 3.9.6
+  * Depend on haskell-devscripts >= 0.10 to ensure that this package
+    builds against GHC in experimental
+
+ -- Joachim Breitner <nomeata@debian.org>  Thu, 20 Aug 2015 10:26:51 +0200
+
+alex (3.1.4-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Joachim Breitner <nomeata@debian.org>  Mon, 27 Apr 2015 11:47:21 +0200
+
+alex (3.1.4-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Joachim Breitner <nomeata@debian.org>  Sun, 05 Apr 2015 16:29:13 +0200
+
+alex (3.1.3-2) experimental; urgency=medium
+
+  * Depend on haskell-devscripts 0.9, found in experimental
+
+ -- Joachim Breitner <nomeata@debian.org>  Sat, 20 Dec 2014 17:09:19 +0100
+
+alex (3.1.3-1) unstable; urgency=low
+
+  * Adjust watch file to new hackage layout
+  * New upstream release
+
+ -- Joachim Breitner <nomeata@debian.org>  Sun, 09 Mar 2014 11:13:50 +0100
+
+alex (3.1.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Joachim Breitner <nomeata@debian.org>  Wed, 18 Sep 2013 19:12:23 +0200
+
+alex (3.0.5-2) unstable; urgency=low
+
+  * /usr/share/alex-3.0.5 -> /usr/share/alex
+  * Bump version of Build-Depends: on haskell-devscripts
+
+ -- Louis Bettens <louis@bettens.info>  Mon, 29 Jul 2013 18:50:09 +0200
+
+alex (3.0.5-1) unstable; urgency=low
+
+  [ Erik de Castro Lopo ]
+  [Joachim Breitner]
+  * New upstream release
+  * Enable tests
+
+  [Erik de Castro Lopo]
+  * Drop patches/fix-bang-pattern.diff (not needed any longer)
+  * Add patches/cabal-test.diff to make the tests compile
+
+ -- Joachim Breitner <nomeata@debian.org>  Wed, 29 May 2013 23:51:42 +0200
+
+alex (3.0.2-2) unstable; urgency=low
+
+  * Enable compat level 9
+
+ -- Joachim Breitner <nomeata@debian.org>  Fri, 24 May 2013 12:49:40 +0200
+
+alex (3.0.2-1) experimental; urgency=low
+
+  * Depend on haskell-devscripts 0.8.13 to ensure this packages is built
+    against experimental
+  * Bump standards version, no change
+  * New upstream release
+
+ -- Joachim Breitner <nomeata@debian.org>  Fri, 19 Oct 2012 23:11:20 +0200
+
+alex (3.0.1-1) unstable; urgency=low
+
+  * New upstream release.  closes: #638988.
+  * Update fix-bang-pattern.diff.
+  * Add build dependency on libghc-quickcheck2-dev.
+
+ -- Clint Adams <clint@debian.org>  Tue, 23 Aug 2011 11:21:06 -0400
+
+alex (2.3.5-3) unstable; urgency=low
+
+  * Update fix-bang-pattern.diff patch to add LANGUAGE option BanPatterns to
+    generated code (Closes: #635113).
+  * debian/control: Standards version (no changes required).
+
+ -- Erik de Castro Lopo <erikd@mega-nerd.com>  Sun, 24 Jul 2011 14:15:36 +1000
+
+alex (2.3.5-2) unstable; urgency=low
+
+  [ Erik de Castro Lopo ]
+  * Fix generated haskell code so it doesn't fail with -Werror
+    (Closes: #623067).
+
+  [ Giovanni Mascellani ]
+  * Team upload.
+
+ -- Giovanni Mascellani <gio@debian.org>  Sun, 17 Apr 2011 10:56:54 +0200
+
+alex (2.3.5-1) unstable; urgency=low
+
+  [ Erik de Castro Lopo ]
+  * New upstream.
+  * Remove patches/00-fix-warnings-on-big-endian.diff (fixed upstream).
+
+  [ Marco Silva ]
+  * Use ghc instead of ghc6
+
+  [ Joachim Breitner ]
+  * New upstream release
+
+ -- Joachim Breitner <nomeata@debian.org>  Tue, 29 Mar 2011 13:43:36 +0530
+
+alex (2.3.3-2) experimental; urgency=low
+
+  * Fix warnings in alex generated code on big endian systems (Closes: #594181).
+  * debian/control: Bump Standards-Version: to 3.9.1, no changes needed.
+
+ -- Erik de Castro Lopo <erikd@mega-nerd.com>  Sat, 30 Oct 2010 21:16:14 +1100
+
+alex (2.3.3-1) unstable; urgency=low
+
+  [ Erik de Castro Lopo ]
+  * New upstream version.
+
+  [ Joachim Breitner ]
+  * Source format 3.0 (quilt)
+
+ -- Erik de Castro Lopo <erikd@mega-nerd.com>  Wed, 31 Mar 2010 21:10:35 +1100
+
+alex (2.3.2-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Erik de Castro Lopo <erikd@mega-nerd.com>  Fri, 12 Mar 2010 20:25:20 +1100
+
+alex (2.3.1-3) unstable; urgency=low
+
+  * debian/control: Change Priority: to extra.
+  * debian/watch: Use format that works for --download-current-version.
+  * debian/watch: Add .tar.gz to downloaded filename.
+  * debian/watch: Include package name in downloaded .tar.gz.
+  * debian/watch: Remove spaces, since they're not allowed by uscan.
+  * debian/control: Use Vcs-Browser: field.
+  * debian/control: Bump Standards-Version: to 3.8.4, no changes needed.
+  * debian/control: Bump version of Build-Depends: on haskell-devscripts
+    to 0.7 and remove versioned Build-Depends: on ghc6.
+
+ -- Marco Túlio Gontijo e Silva <marcot@debian.org>  Sun, 21 Feb 2010 09:30:03 -0300
+
+alex (2.3.1-2) unstable; urgency=low
+
+  * debian/control: Add forgotten build-deps on autoconf, alex and happy to
+    resolve FTBFS (Closes: #551233)
+
+ -- Iain Lane <laney@ubuntu.com>  Fri, 16 Oct 2009 20:45:30 +0100
+
+alex (2.3.1-1) unstable; urgency=low
+
+  * New upstream release (Closes: #530313)
+  * Let watchfile point to hackage
+  * Adopt for the Debian Haskell Group and adjust packaging.
+
+ -- Joachim Breitner <nomeata@debian.org>  Mon, 05 Oct 2009 17:22:19 +0200
+
+alex (2.2-0.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix "FTBFS: Not in scope: `buildVerbose'", thanks to Matt Kraai for the
+    patch (Closes: #516277)
+
+ -- Joachim Breitner <nomeata@debian.org>  Wed, 18 Mar 2009 19:01:37 +0100
+
+alex (2.2-0.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * New upstream release (Closes: #464360)
+    - Cabal 1.2 is now required. (Closes: #460388)
+    - ByteString wrappers: use Alex to lex ByteStrings directly.
+    - Fixes a spelling mistake. (Closes: #419671)
+  * debian/control:
+    - Added Homepage field.
+    - Bump the build dependency on ghc6 to 6.8.2 as the packages needs
+      Cabal 1.2 to build.
+    - Bump the Standards-Version to 3.7.3. No changes needed.
+  * debian/copyright:
+    - Fix debian-copyright-file-uses-obsolete-national-encoding lintian
+      warning.
+    - Update debian/copyright file with info from upstream LICENSE file.
+  * debian/get_version.hs: Updated for Cabal 1.2
+  * debian/rules:
+    - Fix debian-rules-ignores-make-clean-error lintian warning.
+    - Remove the LICENSE installed by ./setup copy
+  * Add debian/watch file.
+
+ -- Arjan Oosting <arjan@debian.org>  Sun, 27 Apr 2008 15:31:08 +0200
+
+alex (2.1.0~rc1-1) unstable; urgency=low
+
+  * New upstream (release candidate) version.
+  * Removed alex/ prefixes from various paths in debian/rules.
+  * doc/configure generated by autoconf is in the Debian diff.
+  * Build using cabal:
+    * Various debian/rules changes.
+    * Create debian/get_version.hs for extracting the version from the cabal
+      file.
+    * Requires ghc6 >= 6.4.2.
+    * No longer tries to detect platform. Closes: #332980, #340326.
+  * Add 'XSLTPROC_OPTS = --nonet' to doc/config.mk.in.
+  * Remove src/Parser.y and src/Scan.x before cleaning so the generated
+    files don't get cleaned.
+  * Set Standards-Version to 3.7.2 (no changes needed).
+
+ -- Ian Lynagh (wibble) <igloo@debian.org>  Thu, 26 Oct 2006 17:28:46 +0000
+
+alex (2.0.1-1) unstable; urgency=low
+
+  * New upstream version.
+  * Compiled against new libgmp3-dev.
+  * Add build-deps on xsltproc, docbook-xml and docbook-xsl.
+  * Remove ps from "$(MAKE) -C alex/doc ps html" in debian/rules as
+    the ps docs don't build.
+  * Only copy the HTML docs into the install directory as the other
+    aren't built.
+  * index.html is now built for us, so we don't need to symlink
+    alex.html to it.
+
+ -- Ian Lynagh (wibble) <igloo@debian.org>  Sun, 18 Sep 2005 20:11:47 +0000
+
+alex (2.0-3) unstable; urgency=low
+
+  * Added x86_64 Linux to configure{,.in}. Closes: #253167.
+  * Remove unportable {,} syntax from debian/rules.
+  * Delete alex/doc/alex.out in clean target.
+
+ -- Ian Lynagh (wibble) <igloo@debian.org>  Thu, 15 Jul 2004 21:25:08 +0000
+
+alex (2.0-2) unstable; urgency=low
+
+  * Added s390, m68k, mips, hppa, arm and powerpc Linux to configure{,.in}
+
+ -- Ian Lynagh (wibble) <igloo@debian.org>  Wed, 01 Oct 2003 12:31:01 +0000
+
+alex (2.0-1) unstable; urgency=low
+
+  * Initial release. Closes: #151044.
+  * Changed configure{,.in} to not require flex.
+  * Wrote manpage for alex(1).
+  * Fix references to happy/parsers and version/verbose confusion in the docs.
+  * Changed wrapper to use $@ and ${1+"$@"} rather than $*
+  * When giving usage info, always use the name "alex" (otherwise
+    alex.bin is given).
+  * Add sparc case to configure{,.in}.
+
+ -- Ian Lynagh (wibble) <igloo@debian.org>  Tue, 09 Sep 2003 15:14:27 +0000

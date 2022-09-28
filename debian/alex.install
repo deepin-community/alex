@@ -1,0 +1,2 @@
+debian/tmp-inst-ghc/usr/share/alex usr/share
+dist-ghc/build/alex/alex usr/bin
